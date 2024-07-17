@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Formulários</h1>
+  <form action="cadastro.php" method="POST">
+    <p>
+      <label for="inome">Nome: </label>
+      <input type="text" name="nome" id="inome" placeholder="Seu Nome" autocomplete="username">
+    </p>
+    <p>
+      <label for="iemail">E-mail: </label>
+      <input type="email" name="email" id="iemail" placeholder="Seu E-mail" autocomplete="email">
+    </p>
+    <p>
+      <label for="itel">Telefone: </label>
+      <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-[0-9]{4}$" placeholder="(xx)xxxxx-xxxx" required>
+    </p>
+    <p>
+      <label for="inum">Número: </label>
+      <input type="number" name="num" id="inum" min="0" max="10" step="0.5">
+    </p>
+    <p>
+      <label for="infile">Anexar arquivo: </label>
+      <input type="file" name="nfile" id="infile">
+    </p>
+    <p>
+      <label for="icor">Escolha uma cor: </label>
+      <input type="color" name="cor" id="icor">
+    </p>
+    <p>
+      <h2>Selecione seu esporte favorito</h2>
+      <input type="checkbox" name="bas" id="ibas">
+      <label for="ibas">Basquete</label><br>
+      <input type="checkbox" name="fut" id="ifut">
+      <label for="ifut">Futebol</label><br>
+      <input type="checkbox" name="vol" id="ivol">
+      <label for="ivol">Vôlei</label><br>
+      <input type="checkbox" name="ten" id="iten">
+      <label for="iten">Tênis</label>
+    </p>
+    <p>
+      Gênero:
+      <input type="radio" name="sx" id="sxmasc">
+      <label for="sxmasc">Masculino</label>
+      <input type="radio" name="sx" id="sxfem">
+      <label for="sxfem">Feminino</label>
+    </p>
+    <p>
+      <label for="iest">Estado: </label>
+      <select name="est" id="iest">
+        <option value="" selected>--- Selecione o Estado ---</option>
+        <optgroup label="Estados do Sudeste">
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="SC">Santa Catarina</option>
+          <option value="SP">São Paulo</option>
+        </optgroup>
+        <optgroup label="Estados do Nordeste">
+          <option value="BA">Bahia</option>
+          <option value="MA">Maranhão</option>
+          <option value="PE">Pernambuco</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <label for="itext">Digite uma mensagem: </label><br>
+      <textarea name="text" id="itex" placeholder="Sua mensagem"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+</body>
+</html>
