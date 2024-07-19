@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.botao input {
+  border: none;
+  padding: 5px;
+}
+
+input[type='submit'] {
+  background-color: green;
+}
+
+input[type='reset'] {
+  background-color: red;
+}
